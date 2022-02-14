@@ -4,11 +4,10 @@
 
 body {
     margin: auto;
-    width: 70%;
+    max-width: 60rem;
 }
 
 header {
-    grid-column: span 10;
     display: flex;
     justify-content: space-between; /*Flex with space-between is useful for aligning items on either side of header */
     height: 4em;
@@ -16,21 +15,25 @@ header {
 }
 
 nav {
-    grid-column: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #0000cc;
 }
 
 main {
-    grid-column: span 9;
-    background-color: #ccccff;
+    /* grid-column: span 9; */
 }
 
 h1 {
     margin: auto 0;
+    font-size: 1.5em;
     color: white;
 }
 
-h3 {
+header h3 {
+    align-self: center;
+    margin-left: .7em;
     color: white;
 }
 
@@ -40,23 +43,67 @@ h3 {
 
 .head-right {
     display: flex;
+    align-content: center;
+    margin: .9em;
 }
 
 .bell {
-    margin: auto;
-    height: 60%;
+    align-self: center;
+    margin: 0;
+    padding-right: 1em;
+    height: 70%;
     fill: white;
+    transform-origin: 50% 0;
+    transform-box: fill-box;
+}
+
+.bell:hover {
+    animation: jingle .3s ease-in-out;
+}
+
+.notify {
+    display: flex;
+    border-right: 2px solid white;
+}
+
+@keyframes jingle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .nav-icon {
     display: flex;
     margin: 1em auto;
-    width: 70%;
+    width: 2em;
     fill: white;
 }
 
-.grid-main {
+/* .grid-main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+} */
+
+.profile {
+    margin-left: .7em;
+    border-radius: 50%;
+
+}
+
+.alert {
+    border: 2px solid black;
+
 }
 
