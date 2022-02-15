@@ -7,6 +7,8 @@ const labels = [
     'June',
 ];
 
+
+
 const data = {
     labels: labels,
     datasets: [{
