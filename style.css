@@ -107,3 +107,9 @@ header h3 {
 
 }
 
+.traffic-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
