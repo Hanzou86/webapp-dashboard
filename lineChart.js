@@ -1,4 +1,4 @@
-const labels = [
+const lineChartLabels = [
     'January',
     'February',
     'March',
@@ -9,8 +9,8 @@ const labels = [
 
 
 
-const data = {
-    labels: labels,
+const lineChartData = {
+    labels: lineChartLabels,
     datasets: [{
     label: 'My First dataset',
     backgroundColor: 'rgb(255, 99, 132)',
@@ -19,13 +19,13 @@ const data = {
     }]
 };
 
-const config = {
+const lineChartConfig = {
     type: 'line',
-    data: data,
+    data: lineChartData,
     options: {}
 };
 
 const lineChart = new Chart(
     document.getElementById('lineChart'),
-    config
+    lineChartConfig
 );

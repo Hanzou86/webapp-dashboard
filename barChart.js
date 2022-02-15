@@ -1,8 +1,18 @@
-const labels = Utils.months({count: 7});
+// const barChartlabels = Utils.months({count: 7});
+
+const barChartLabels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+];
 
 
-const data = {
-  labels: labels,
+const barChartData = {
+  labels: barChartLabels,
   datasets: [{
     label: 'My First Dataset',
     data: [65, 59, 80, 81, 56, 55, 40],
@@ -28,9 +38,9 @@ const data = {
   }]
 };
 
-const config = {
+const barChartConfig = {
     type: 'bar',
-    data: data,
+    data: barChartData,
     options: {
         scales: {
             y: {
@@ -42,5 +52,5 @@ const config = {
 
 const barChart = new Chart(
     document.getElementById('barChart'),
-    config
+    barChartConfig
 );
