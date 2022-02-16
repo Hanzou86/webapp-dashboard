@@ -29,7 +29,13 @@ const lineChartData = {
 const lineChartConfig = {
     type: 'line',
     data: lineChartData,
-    options: {}
+    options: {
+        plugins: {
+            legend: {
+              display: false,
+            }
+          }
+    }
 };
 
 const lineChart = new Chart(
