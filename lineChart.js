@@ -19,9 +19,10 @@ const lineChartData = {
     datasets: [{
     label: 'My First dataset',
     tension: .4,
-    borderWidth: 2,
-    backgroundColor: 'rgb(255, 99, 132)',
-    borderColor: 'rgb(255, 99, 132)',
+    borderWidth: 1,
+    fill: 'origin', 
+    backgroundColor: 'rgba(112, 116, 185, .3)',
+    borderColor: 'rgba(112, 116, 185, .3)',
     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500],
     }]
 };

@@ -6,5 +6,5 @@ function closeElement(btn) {
 }
 
 alertClose.addEventListener( 'click', (event) => {
-    closeElement(alertClose)
+    closeElement(alertClose);
 })

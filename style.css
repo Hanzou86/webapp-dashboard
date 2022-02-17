@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: space-between; /*Flex with space-between is useful for aligning items on either side of header */
     height: 4em;
+    padding-left: 1em;
     background-color: rgb(112, 116, 185);
 }
 
@@ -19,27 +20,35 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #0000cc;
+    padding: 0 2em 0 2em;
+    background-color: rgb(76, 76, 106);
 }
 
 main {
-    /* grid-column: span 9; */
+    padding: 1.5em 1.5em 0 1.5em;
 }
 
 h1 {
     margin: auto 0;
-    font-size: 1.5em;
+    font-size: 1.2rem;
+    font-weight: lighter;
     color: white;
 }
 
 header h3 {
     align-self: center;
     margin-left: .7em;
-    color: white;
+    font-size: .7em;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, .7);
+}
+
+h3 {
+
 }
 
 .web {
-    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .head-right {
@@ -64,7 +73,7 @@ header h3 {
 
 .notify {
     display: flex;
-    border-right: 2px solid white;
+    border-right: 1px solid rgb(134, 137, 175);
 }
 
 @keyframes jingle {
@@ -104,10 +113,32 @@ header h3 {
 }
 
 .alert {
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: .6em;
+    border-radius: 8px;
     background-color: rgb(112, 116, 185);
 
 }
+
+.alert h3 {
+    margin: 0 3em 0 0;
+    font-size: .9em;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, .7);
+}
+
+.alert-close {
+    height: fit-content;
+    padding: 0;
+    color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
+
+.alert-close:hover {
+    transform: scale(1.2);
+}
+
 
 .traffic-bar {
     display: flex;
@@ -118,6 +149,19 @@ header h3 {
 
 .social {
     display: flex;
+    align-items: center;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+
+}
+
+.media {
+    margin: 0;
+}
+
+.media-stat-wrapper {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -137,11 +181,25 @@ header h3 {
 
 section,
 .member {
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid lightgrey;
 }
 
 .social,
 .new-members,
 .recent-activity {
     border-bottom: none;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    height: 4em;
+    width: 40%;
+    padding: 1em;
+    border-right: 1px solid lightgrey;
+    border-bottom: none;
+}
+
+.tab-bar {
+    border-bottom: 1px solid lightgrey;
 }
