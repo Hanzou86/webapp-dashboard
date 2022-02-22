@@ -1,1 +1,2 @@
-Continue working on social stats section
+-Finish form
+-Create responsive layouts for tablet and desktop

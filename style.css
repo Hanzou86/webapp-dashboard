@@ -5,6 +5,10 @@
 body {
     margin: auto;
     max-width: 60rem;
+    font-family: 'Open-Sans';
+}
+
+body * {
     font-family: 'Open Sans';
 }
 
@@ -39,12 +43,11 @@ header h3 {
     align-self: center;
     margin-left: .7em;
     font-size: .7em;
-    font-weight: lighter;
     color: rgba(255, 255, 255, .7);
 }
 
 h3 {
-
+    font-size: 1rem;
 }
 
 .web {
@@ -118,7 +121,6 @@ h3 {
     padding: .6em;
     border-radius: 8px;
     background-color: rgb(112, 116, 185);
-
 }
 
 .alert h3 {
@@ -150,6 +152,7 @@ h3 {
 .social {
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
     border: 2px solid lightgrey;
     border-radius: 5px;
 
@@ -162,7 +165,8 @@ h3 {
 .media-stat-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    margin-left: 1em;
 }
 
 .media-icon {
@@ -184,10 +188,15 @@ section,
     border-bottom: 2px solid lightgrey;
 }
 
-.social,
 .new-members,
 .recent-activity {
     border-bottom: none;
+}
+
+.social {
+    padding: 1em;
+    background-color: rgba(112, 116, 185, .08);
+
 }
 
 .dash {
@@ -202,4 +211,133 @@ section,
 
 .tab-bar {
     border-bottom: 1px solid lightgrey;
+}
+
+.stat {
+    font-size: 2.4em;
+    color: rgba(0, 0, 0, .6);
+}
+
+.media {
+    color: rgb(112, 116, 185);
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.member-img {
+    width: 5em;
+    margin-bottom: .5em;
+    border-radius: 50%;
+}
+
+.member-name {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.email {
+    text-decoration: none;
+    color: rgb(112, 116, 185);
+}
+
+.activity {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.send-btn {
+    width: 100%;
+    margin: .5em 0 1em 0;
+    padding: .7em;
+    border:none;
+    border-radius: 5px;
+    color: rgba(255,255,255, .7);
+    background-color: rgb(112, 116, 185);
+}
+
+.user-form fieldset {
+    align-items: center;
+    padding: 0;
+    border: none;
+}
+
+.user-form fieldset:first-child
+{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid lightgrey;
+}
+
+.user-form fieldset:last-child h3
+{
+    margin-bottom: 0;
+}
+
+
+.switch-wrapper 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.switch 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5.5em;
+    height: 2.2em;
+    border: 2px solid lightgrey;
+    border-radius: 25px;
+    background-color:rgb(112, 116, 185);
+}
+
+.slider 
+{
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: .2em;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.timezone 
+{
+    width: 100%;
+}
+
+.save-wrapper 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-user,
+.text-user
+ {
+    width: 100%;
+    margin: .5em;
+    padding: 1em;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+
+::placeholder 
+{
+    color: rgb(199, 197, 197);
+    font-size: 1.1em;
+
 }

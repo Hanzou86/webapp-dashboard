@@ -122,53 +122,129 @@
                 <section class='new-members'>
                     <h3>New Members</h3>
                     <div class='member'>
-                        <img src='images/member-1.jpg'>
-                        <h4>Victoria Chambers</h4>
-                        <a href='mailto:victoria.chambers80@example.com'>victoria.chambers80@example.com</a>
+                        <img class='member-img' src='images/member-1.jpg'>
+                        <h4 class='member-name'>Victoria Chambers</h4>
+                        <a class='email' href='mailto:victoria.chambers80@example.com'>victoria.chambers80@example.com</a>
                         <div>10/15/20</div>
                     </div>
                     <div class='member'>
-                        <img src='images/member-2.jpg'>
-                        <h4>Dale Byrd</h4>
-                        <a href='mailto:dale.byrd52@example.com'>dale.byrd52@example.com</a>
+                        <img class='member-img' src='images/member-2.jpg'>
+                        <h4 class='member-name'>Dale Byrd</h4>
+                        <a class='email'  href='mailto:dale.byrd52@example.com'>dale.byrd52@example.com</a>
+                        <div>10/15/20</div>
+                    </div>
+                    <div  class='member'>
+                        <img class='member-img' src='images/member-3.jpg'>
+                        <h4 class='member-name'>Dawn Wood</h4>
+                        <a class='email' href='mailto:dawn.wood16@example.com'>mailto:dawn.wood16@example.com</a>
                         <div>10/15/20</div>
                     </div>
                     <div class='member'>
-                        <img src='images/member-3.jpg'>
-                        <h4>Dawn Wood</h4>
-                        <a href='mailto:dawn.wood16@example.com'>mailto:dawn.wood16@example.com</a>
-                        <div>10/15/20</div>
-                    </div>
-                    <div class='member'>
-                        <img src='images/member-4.jpg'>
-                        <h4>Dan Oliver</h4>
-                        <a href='mailto:dan.oliver82@example.com'>dan.oliver82@example.com</a>
+                        <img class='member-img' src='images/member-4.jpg'>
+                        <h4 class='member-name'>Dan Oliver</h4>
+                        <a class='email' href='mailto:dan.oliver82@example.com'>dan.oliver82@example.com</a>
                         <div>10/15/20</div>
                     </div>
                 </section>
 
                 <section class='recent-activity'>
+                    <h3>Recent Activity</h3>
                     <div class='member'>
-                        <img src='images/member-1.jpg'>
-                        <div class='activity'>Victoria Chambers commented on <b>WebApp's SEO Tips</b></div>
-                        <div class='time'>4 hours ago</div>
+                        <img class='member-img' src='images/member-1.jpg'>
+                        <p class='activity'>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
+                        <span class='time'>4 hours ago</span>
                     </div>
                     <div class='member'>
-                        <img src='images/member-2.jpg'>
-                        <div class='activity'>Dale Byrd liked the post <b>Facebook's Changes for 2021</b></div>
-                        <div class='time'>5 hours ago</div>
+                        <img class='member-img' src='images/member-2.jpg'>
+                        <p class='activity'>Dale Byrd liked the post <b>Facebook's Changes for 2021</b></p>
+                        <span class='time'>5 hours ago</span>
                     </div>
                     <div class='member'>
-                        <img src='images/member-3.jpg'>
-                        <div class='activity'>Dawn Wood commented on <b>Facebook's Changes for 2021</b></div>
-                        <div class='time'>5 hours ago</div>
+                        <img class='member-img' src='images/member-3.jpg'>
+                        <p class='activity'>Dawn Wood commented on <b>Facebook's Changes for 2021</b></p>
+                        <span class='time'>5 hours ago</span>
                     </div>
                     <div class='member'>
-                        <img src='images/member-1.jpg'>
-                        <div class='activity'>Dan Oliver posted <b>WebApp's SEO Tips</b></div>
-                        <div class='time'>1 day ago</div>
+                        <img class='member-img' src='images/member-4.jpg'>
+                        <p class='activity'>Dan Oliver posted <b>WebApp's SEO Tips</b></p>
+                        <span class='time'>1 day ago</span>
                     </div>
                 </section>
+
+                <form class='user-form'>
+                    <fieldset>
+                        <legend><h3>Message User</h3></legend>
+                        <input class='search-user' type='search' name='search' placeholder='Search for User'>
+                        <textarea class='text-user' placeholder='Message for User'></textarea>
+                        <input type='submit' class='send-btn' value='SEND'>
+                    </fieldset>
+                    <fieldset>
+                        <legend><h3>Settings</h3></legend>
+                        <div class='switch-wrapper'>
+                            <label for='notifications'>Send Email Notifications</label>
+                            <div class='switch'>
+                                <input type='checkbox' id='notifications' name='notifications'>
+                                <span class='slider'></span>
+                            </div>
+                        </div>
+
+                        <div class='switch-wrapper'>
+                            <label for='set-profile'>Set Profile to Public</label>
+                            <div class='switch'>
+                                <input type='checkbox' id='set-profile' name='set-profile'>
+                                <span class='slider'></span>
+                            </div>
+                        </div>
+                        <select class='timezone' placeholder='Select Timezone'>
+                            <optgroup placeholder='Select Timezone'>
+                                <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                                <option value="-10:00">(GMT -10:00) Hawaii</option>
+                                <option value="-09:50">(GMT -9:30) Taiohae</option>
+                                <option value="-09:00">(GMT -9:00) Alaska</option>
+                                <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                                <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                                <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                                <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                                <option value="-04:50">(GMT -4:30) Caracas</option>
+                                <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                                <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                                <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                                <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                                <option value="+00:00" selected="selected">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                                <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                                <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                <option value="+03:50">(GMT +3:30) Tehran</option>
+                                <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                                <option value="+04:50">(GMT +4:30) Kabul</option>
+                                <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                                <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                                <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                                <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                                <option value="+08:75">(GMT +8:45) Eucla</option>
+                                <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                                <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                                <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                                <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                                <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                                <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                                <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                                <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                                <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                                <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                            </optgroup>
+                        </select>
+                        <div class='save-wrapper'>
+                            <input class='save' type='button' value='SAVE'>
+                            <input class='cancel' type='button' value='CANCEL'>  
+                        </div>
+                    </fieldset>
+                </form>
         </main>
     </div>
     <script src='app.js'></script>
