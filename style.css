@@ -279,9 +279,10 @@ main h3 {
 .send-btn {
     width: 100%;
     margin: .5em 0 1em 0;
-    padding: .7em;
+    padding: .9em;
     border:none;
     border-radius: 5px;
+    font-size: 1em;
     color: rgba(255,255,255, .7);
     background-color: rgb(112, 116, 185);
 }
@@ -318,7 +319,7 @@ main h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 5.5em;
+    min-width: 5.5em;
     height: 2.2em;
     border: 2px solid lightgrey;
     border-radius: 25px;
@@ -327,13 +328,26 @@ main h3 {
 
 .switch input 
 {
-    /* opacity: 0; */
-    content: 'ON';
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    z-index: 1;
+    margin-left: .8em;
+    opacity: 0;
+    cursor: pointer;
 }
 
-.switch input:checked + .slider
+
+.on-off
 {
-    transform: translateX(-55px);
+    position: absolute;
+    margin-left: 3px;
+    color: white;
+}
+
+.switch input:checked ~ .slider
+{
+    transform: translateX(-26px);
 }
 
 .slider 
@@ -341,6 +355,7 @@ main h3 {
     width: 1.4em;
     height: 1.4em;
     margin-right: .2em;
+    margin-left: auto;
     border: 2px solid lightgrey;
     border-radius: 50%;
     background-color: white;
@@ -441,13 +456,9 @@ main h3 {
     {
         max-width: 100%;
     }
-    .flex-wrapper
-    {
-        display: flex;
-    }
-
     .bar-donut
     {
+        display: flex;
         padding: 0 1em;
     }
 
@@ -476,8 +487,91 @@ main h3 {
     {
         margin-right: 1em;
     }
+    .social-sect-wrap
+    {
+        display: flex;
+        justify-content: space-between;
+    }
     .tw
     {
         margin-right: 0;
+    }
+    .member
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .date 
+    {
+        margin-left: auto;
+    }
+    .member-img
+    {
+        margin-right: 1em;
+    }
+    .switch
+    {
+        margin-right: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    .members-act-wrap
+    {
+        display: flex;
+        padding-bottom: 0;
+    }
+    .new-members,
+    .recent-activity
+    {
+        height: fit-content;
+    }
+    .member
+    {
+        height: 150px;
+    }
+    .act-time-wrap
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form
+    {
+        padding-top: 0;
+    }
+    .form-wrap
+    {
+        display: flex;
+    }
+    .user-form fieldset
+    {
+
+        width: 50%;
+    }
+    .user-form fieldset:first-child
+    {
+        padding-right: 1em;
+        border-right: 2px solid lightgrey;
+        border-bottom: none;
+    }
+    .user-form fieldset:last-child
+    {
+        padding-left: 1em;
+    }
+
+    .search-user
+    {
+        margin-top: auto;
+    }
+    .send-btn
+    {
+        margin-bottom: 0;
+    }
+    .switch
+    {
+        margin-right: 25%;
     }
 }

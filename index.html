@@ -71,7 +71,7 @@
                         <canvas id="lineChart"></canvas>
                     </div>
                 </section>
-                <div class='bar-donut flex-wrapper'>
+                <div class='bar-donut'>
                     <section class='daily-traffic'>
                         <h3>Daily Traffic</h3>
                         <div>
@@ -88,7 +88,7 @@
                 </div>
                 <section class='social-stats'>
                     <h3>Social Stats</h3>
-                    <div class='flex-wrapper'>
+                    <div class='social-sect-wrap'>
                         <section class='social fb'>
                             <div class='icon-wrapper'>
                                 <svg class='media-icon' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -125,31 +125,40 @@
                 </div>
                 </section>
 
+                <div class='members-act-wrap'>
                 <section class='new-members'>
                     <h3>New Members</h3>
                     <div class='member'>
                         <img class='member-img' src='images/member-1.jpg'>
-                        <h4 class='member-name'>Victoria Chambers</h4>
-                        <a class='email' href='mailto:victoria.chambers80@example.com'>victoria.chambers80@example.com</a>
-                        <div>10/15/20</div>
+                        <div class='name-email-wrap'>
+                            <h4 class='member-name'>Victoria Chambers</h4>
+                            <a class='email' href='mailto:victoria.chambers80@example.com'>victoria.chambers80@example.com</a>
+                        </div>
+                        <span class='date'>10/15/20</span>
                     </div>
                     <div class='member'>
                         <img class='member-img' src='images/member-2.jpg'>
-                        <h4 class='member-name'>Dale Byrd</h4>
-                        <a class='email'  href='mailto:dale.byrd52@example.com'>dale.byrd52@example.com</a>
-                        <div>10/15/20</div>
+                        <div class='name-email-wrap'>
+                            <h4 class='member-name'>Dale Byrd</h4>
+                            <a class='email'  href='mailto:dale.byrd52@example.com'>dale.byrd52@example.com</a>
+                        </div>
+                        <span class='date'>10/15/20</span>
                     </div>
                     <div  class='member'>
                         <img class='member-img' src='images/member-3.jpg'>
-                        <h4 class='member-name'>Dawn Wood</h4>
-                        <a class='email' href='mailto:dawn.wood16@example.com'>mailto:dawn.wood16@example.com</a>
-                        <div>10/15/20</div>
+                        <div class='name-email-wrap'>
+                            <h4 class='member-name'>Dawn Wood</h4>
+                            <a class='email' href='mailto:dawn.wood16@example.com'>mailto:dawn.wood16@example.com</a>
+                        </div>
+                        <span class='date'>10/15/20</span>
                     </div>
                     <div class='member'>
                         <img class='member-img' src='images/member-4.jpg'>
+                        <div class='name-email-wrap'>
                         <h4 class='member-name'>Dan Oliver</h4>
                         <a class='email' href='mailto:dan.oliver82@example.com'>dan.oliver82@example.com</a>
-                        <div>10/15/20</div>
+                        </div>
+                        <span class='date'>10/15/20</span>
                     </div>
                 </section>
 
@@ -157,27 +166,37 @@
                     <h3>Recent Activity</h3>
                     <div class='member'>
                         <img class='member-img' src='images/member-1.jpg'>
-                        <p class='activity'>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
-                        <span class='time'>4 hours ago</span>
+                        <div class='act-time-wrap'>
+                            <p class='activity'>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
+                            <span class='time'>4 hours ago</span>
+                        </div>
                     </div>
                     <div class='member'>
                         <img class='member-img' src='images/member-2.jpg'>
-                        <p class='activity'>Dale Byrd liked the post <b>Facebook's Changes for 2021</b></p>
-                        <span class='time'>5 hours ago</span>
+                        <div class='act-time-wrap'>
+                            <p class='activity'>Dale Byrd liked the post <b>Facebook's Changes for 2021</b></p>
+                            <span class='time'>5 hours ago</span>
+                        </div>
                     </div>
                     <div class='member'>
                         <img class='member-img' src='images/member-3.jpg'>
-                        <p class='activity'>Dawn Wood commented on <b>Facebook's Changes for 2021</b></p>
-                        <span class='time'>5 hours ago</span>
+                        <div class='act-time-wrap'>
+                            <p class='activity'>Dawn Wood commented on <b>Facebook's Changes for 2021</b></p>
+                            <span class='time'>5 hours ago</span>
+                        </div>
                     </div>
                     <div class='member'>
                         <img class='member-img' src='images/member-4.jpg'>
-                        <p class='activity'>Dan Oliver posted <b>WebApp's SEO Tips</b></p>
-                        <span class='time'>1 day ago</span>
+                        <div class='act-time-wrap'>
+                            <p class='activity'>Dan Oliver posted <b>WebApp's SEO Tips</b></p>
+                            <span class='time'>1 day ago</span>
+                        </div>
                     </div>
                 </section>
+                </div>
 
                 <form class='user-form'>
+                    <div class='form-wrap'>
                     <fieldset>
                         <legend><h3>Message User</h3></legend>
                         <input class='search-user' type='search' name='search' placeholder='Search for User'>
@@ -190,6 +209,7 @@
                             <label for='notifications'>Send Email Notifications</label>
                             <div class='switch'>
                                 <input type='checkbox' id='notifications' name='notifications'>
+                                <span class='on-off'>ON</span>
                                 <span class='slider'></span>
                             </div>
                         </div>
@@ -198,6 +218,7 @@
                             <label for='set-profile'>Set Profile to Public</label>
                             <div class='switch'>
                                 <input type='checkbox' id='set-profile' name='set-profile'>
+                                <span class='on-off'>ON</span>
                                 <span class='slider'></span>
                             </div>
                         </div>
@@ -251,6 +272,7 @@
                             <input class='cancel' type='button' value='CANCEL'>  
                         </div>
                     </fieldset>
+                    </div>
                 </form>
         </main>
     </div>
