@@ -75,6 +75,29 @@ h3 {
 .notify {
     display: flex;
     border-right: 1px solid rgb(134, 137, 175);
+    cursor: pointer;
+}
+
+/* .notify:hover .notify-list
+{
+    display: flex;
+} */
+
+.notify ul li
+{
+    font-size: .7em;
+    color: rgb(76, 76, 106);
+}
+
+.notify-list 
+{
+    width: 150px;
+    display: none;
+    position: absolute;
+    margin-top: 2em;
+    padding: 1em;
+    list-style: none;
+    background-color:rgb(245, 245, 245);
 }
 
 @keyframes jingle {
@@ -285,6 +308,7 @@ main h3 {
     font-size: 1em;
     color: rgba(255,255,255, .7);
     background-color: rgb(112, 116, 185);
+    cursor: pointer;
 }
 
 .user-form fieldset {
@@ -366,6 +390,7 @@ main h3 {
 .timezone 
 {
     width: 100%;
+    margin-bottom: 2em;
     padding: 1em;
     border: 2px solid lightgrey;
     border-radius: 8px;
@@ -373,10 +398,16 @@ main h3 {
     color: grey;
 }
 
-.save-wrapper 
+.save-cancel-wrapper 
 {
     display: flex;
     justify-content: space-between;
+}
+
+.save,
+.cancel
+{
+    cursor: pointer;
 }
 
 .search-user,
@@ -398,10 +429,12 @@ main h3 {
 
 ::placeholder 
 {
-    color: rgb(199, 197, 197);
+    color: var (--c, rgb(199, 197, 197));
     font-size: 1.1em;
 
 }
+
+
 
 .save-wrapper
 {
