@@ -1,7 +1,8 @@
 const alert = document.querySelector('.alert');
 const alertClose = document.querySelector('.alert-close');
 const onOff = document.querySelector('.on-off')
-const switchInput = document.querySelector('#notifications')
+const switchInput = document.querySelector('.switch-input');
+
 
 
 function closeElement(btn) {
@@ -18,5 +19,4 @@ switchInput.addEventListener('click', (event) => {
     } else {
         onOff.textContent = 'ON';
     }
-
 })
