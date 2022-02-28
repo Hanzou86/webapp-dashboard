@@ -68,5 +68,5 @@ notify.addEventListener('click', (event) => {
 })
 
 hourlyData.addEventListener('click', (event) => {
-    lineChartData.datasets.label;
+    lineChartData.datasets.data.hourly;
 })
