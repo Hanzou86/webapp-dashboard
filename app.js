@@ -8,6 +8,7 @@ const textUser = document.querySelector('.text-user');
 const userForm = document.querySelector('.user-form');
 const notifyList = document.querySelector('.notify-list');
 const notify = document.querySelector('.notify');
+const hourlyData = document.querySelector('.hourly');
 
 function closeElement(btn) {
     btn.parentNode.style.display = 'none';
@@ -64,4 +65,8 @@ notify.addEventListener('click', (event) => {
     } else {
         notifyList.style.display = 'none';
     }
+})
+
+hourlyData.addEventListener('click', (event) => {
+    lineChartData.datasets.label;
 })

@@ -174,18 +174,28 @@ main > *
 
 
 .traffic-bar {
+    height: 3em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
 .traffic-bar li
 {
     font-weight: 500;
+    cursor: pointer;
+    transition: .4s;
 }
 
-
+.traffic-bar li:hover
+{
+    padding: .3em;
+    border-radius: 25px;
+    color: white;
+    background-color: #63cb8b;
+}
 
 .social {
     display: flex;
