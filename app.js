@@ -9,6 +9,7 @@ const userForm = document.querySelector('.user-form');
 const notifyList = document.querySelector('.notify-list');
 const notify = document.querySelector('.notify');
 const hourlyData = document.querySelector('.hourly');
+const dailyData = document.querySelector('.daily');
 
 function closeElement(btn) {
     btn.parentNode.style.display = 'none';
@@ -67,6 +68,39 @@ notify.addEventListener('click', (event) => {
     }
 })
 
-hourlyData.addEventListener('click', (event) => {
-    lineChartData.datasets.data.hourly;
+
+
+
+
+
+
+searchUser.addEventListener('input', (event) => {
+    if(event.target.value === 'plum') {
+        console.log('Mmmmm')
+    }
 })
+
+
+const genObject = {
+   propOne: 'Hello',
+   propTwo:  27,
+   propThree:  ['apple', 'banana', 'orange', 'grapes'],
+   propFour:  true,
+   propFive:  [{
+       name: 'James',
+       age: '35',
+       height: '5ft 11in'
+   },
+        {
+            name: 'Gloria',
+            age: '26',
+            height: '6ft'
+        }
+    ]
+    
+}
+
+const property = genObject.propFive[1].height;
+
+console.log(property);
+
