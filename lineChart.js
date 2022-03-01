@@ -1,3 +1,7 @@
+
+let lineCanvas = document.querySelector('#lineChart');
+const ctx = lineCanvas.getContext('2d');
+
 const lineChartLabels = [
     '16-22',
     '23-29',
@@ -11,6 +15,8 @@ const lineChartLabels = [
     '18-24',
     '25-31',
 ];
+
+
 
 const trafficData = {
     hourly: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500],
@@ -34,6 +40,8 @@ const lineChartData = {
 
 dailyData.addEventListener('click', (event) => {
     lineChartData.datasets[0].data = trafficData.daily;
+    window.lineCanvas.update();
+    // new Chart(lineCanvas);
 })
 
 
