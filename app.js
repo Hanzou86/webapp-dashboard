@@ -8,8 +8,7 @@ const textUser = document.querySelector('.text-user');
 const userForm = document.querySelector('.user-form');
 const notifyList = document.querySelector('.notify-list');
 const notify = document.querySelector('.notify');
-const hourlyData = document.querySelector('.hourly');
-const dailyData = document.querySelector('.daily');
+
 
 function closeElement(btn) {
     btn.parentNode.style.display = 'none';

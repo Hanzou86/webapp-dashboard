@@ -1,6 +1,8 @@
+const hourlyData = document.querySelector('.hourly');
+const dailyData = document.querySelector('.daily');
+const weeklyData = document.querySelector('.weekly');
+const monthlyData = document.querySelector('.monthly');
 
-let lineCanvas = document.querySelector('#lineChart');
-const ctx = lineCanvas.getContext('2d');
 
 const lineChartLabels = [
     '16-22',
@@ -38,13 +40,25 @@ const lineChartData = {
     }]
 };
 
-dailyData.addEventListener('click', (event) => {
-    lineChartData.datasets[0].data = trafficData.daily;
-    window.lineCanvas.update();
-    // new Chart(lineCanvas);
+hourlyData.addEventListener('click', (event) => {
+    lineChartData.datasets[0].data = trafficData.hourly;
+    lineChart.update();
 })
 
+dailyData.addEventListener('click', (event) => {
+    lineChartData.datasets[0].data = trafficData.daily;
+    lineChart.update();
+})
 
+weeklyData.addEventListener('click', (event) => {
+    lineChartData.datasets[0].data = trafficData.weekly;
+    lineChart.update();
+})
+
+monthlyData.addEventListener('click', (event) => {
+    lineChartData.datasets[0].data = trafficData.monthly;
+    lineChart.update();
+})
 
 const lineChartConfig = {
     type: 'line',
