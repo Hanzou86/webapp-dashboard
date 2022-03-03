@@ -43,13 +43,13 @@ sendBtn.addEventListener('click', (event) => {
     }
 })
 
-searchUser.addEventListener('click', (event) => {
-    if (searchUser.value === 'Please Enter User Name' | textUser.value === 'Please Enter Message') {
-        userForm.reset();
-        searchUser.style.color = 'initial';
-        textUser.style.color = 'initial';
-    }
-}) 
+// searchUser.addEventListener('click', (event) => {
+//     if (searchUser.value === 'Please Enter User Name' | textUser.value === 'Please Enter Message') {
+//         userForm.reset();
+//         searchUser.style.color = 'initial';
+//         textUser.style.color = 'initial';
+//     }
+// }) 
 
 textUser.addEventListener('click', (event) => {
     if (searchUser.value === 'Please Enter User Name' | textUser.value === 'Please Enter Message') {
@@ -70,36 +70,4 @@ notify.addEventListener('click', (event) => {
 
 
 
-
-
-
-searchUser.addEventListener('input', (event) => {
-    if(event.target.value === 'plum') {
-        console.log('Mmmmm')
-    }
-})
-
-
-const genObject = {
-   propOne: 'Hello',
-   propTwo:  27,
-   propThree:  ['apple', 'banana', 'orange', 'grapes'],
-   propFour:  true,
-   propFive:  [{
-       name: 'James',
-       age: '35',
-       height: '5ft 11in'
-   },
-        {
-            name: 'Gloria',
-            age: '26',
-            height: '6ft'
-        }
-    ]
-    
-}
-
-const property = genObject.propFive[1].height;
-
-console.log(property);
 

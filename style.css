@@ -4,7 +4,7 @@
 
 body {
     margin: auto;
-    max-width: 60rem;
+    max-width: 60em;
     font-family: 'Open-Sans';
 }
 
@@ -24,7 +24,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 2em 0 2em;
+    padding: 0 1.5em 0 1.5em;
     background-color: rgb(76, 76, 106);
 }
 
@@ -72,16 +72,23 @@ h3 {
     animation: jingle .3s ease-in-out;
 }
 
+.indicator
+{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #63cb8b;
+    z-index: 2;
+}
+
 .notify {
     display: flex;
+    flex-direction: column;
     border-right: 1px solid rgb(134, 137, 175);
     cursor: pointer;
 }
 
-/* .notify:hover .notify-list
-{
-    display: flex;
-} */
 
 .notify ul li
 {
@@ -133,10 +140,7 @@ h3 {
 
 }
 
-main 
-{
-    grid-column: 9fr;
-}
+
 
 main > * 
 {
@@ -237,8 +241,16 @@ section,
 }
 
 .new-members,
-.recent-activity {
+.recent-activity 
+{
+    font-size: .8em;
     border-bottom: none;
+}
+
+.new-members h3,
+.recent-activity h3
+{
+    text-align: center;
 }
 
 .social {
@@ -296,13 +308,35 @@ section,
     font-weight: lighter;
 }
 
+.name-email-wrap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .email {
     text-decoration: none;
     color: rgb(112, 116, 185);
 }
 
+.act-time-wrap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .activity {
     text-align: center;
+}
+
+.arrow
+{
+    display: none;
+    margin-left: auto;
+    font-size: 1.5em;
+    color:rgb(112, 116, 185);
 }
 
 main h3 {
@@ -539,6 +573,21 @@ main h3 {
     {
         margin-right: 0;
     }
+    .new-members h3,
+    .recent-activity h3
+    {
+    text-align: left;
+    }
+    .name-email-wrap
+    {
+        align-items: flex-start;
+    }
+    .act-time-wrap
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
     .member
     {
         display: flex;
@@ -552,6 +601,13 @@ main h3 {
     {
         margin-right: 1em;
     }
+    .arrow
+    {
+    display: initial;
+    margin-left: auto;
+    font-size: 1.5em;
+    color:rgb(112, 116, 185);
+    }
     .switch
     {
         margin-right: 60%;
@@ -564,6 +620,7 @@ main h3 {
     .members-act-wrap
     {
         display: flex;
+        flex-direction: row;
         padding-bottom: 0;
     }
     .new-members,
