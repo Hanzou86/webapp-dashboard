@@ -250,6 +250,7 @@ section,
 .new-members h3,
 .recent-activity h3
 {
+    margin-left: 1em;
     text-align: center;
 }
 
@@ -627,6 +628,11 @@ main h3 {
     .recent-activity
     {
         height: fit-content;
+        width: 50%;
+    }
+    .new-members
+    {
+        border-right: 2px solid lightgrey;
     }
     .member
     {
